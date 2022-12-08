@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>W3.CSS Template</title>
+<head><style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+<title>MAOM Project</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -20,8 +37,6 @@
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
     <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
   </div>
 </header>
 
@@ -29,20 +44,26 @@
 <div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
 <div class="w3-bar w3-light-grey">
   <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
 </div>
 </div>
 <!-- Page content -->
 <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
   <!-- Images (Portfolio) -->
+  <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Plant life of Amrita</h1>
   <img src="PHOTO-2022-12-07-21-57-42.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
   <img src="PHOTO-2022-12-07-21-57-42 2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
   <img src="PHOTO-2022-12-07-21-57-42 3.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Wildlife of Amrita</h1>
   <img src="PHOTO-2022-12-07-21-57-48.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="WhatsApp Image 2022-12-07 at 21.57.39.jpeg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
-
+  <div class="column">
+    <img src="Screenshot 2022-12-08 at 7.22.48 AM.png" alt="Mountains" class="w3-image w3-margin-top" width="500" height="300">
+  </div>
+  <div class="column">
+    <img src="Screenshot 2022-12-08 at 7.44.41 AM.png" alt="Mountains" class="w3-image w3-margin-top">
+  </div>
+  
+  
 <!-- End page content -->
 </div>
 
